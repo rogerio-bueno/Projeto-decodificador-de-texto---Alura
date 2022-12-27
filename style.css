@@ -1,0 +1,188 @@
+* { 
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 80%;
+    background-color: #ebeff1;
+}
+
+main {
+    display: flex;
+    margin: 2rem 10% 2rem 10%;
+    justify-content: space-around;
+}
+
+.leftBox {
+    display: inline-block;
+}
+
+.rightBox {
+    display: inline-block;
+    width: 30rem;
+}
+
+.logo {
+    margin: 4rem auto 4rem 10rem;
+    display: block;
+    justify-content: left;
+}
+
+/********** Left Box CSS **********/
+
+#textoEntrada {
+    font-family: Helvetica, Arial, sans-serif; 
+    font-size: 2rem;
+    color: #508aa6;
+
+    width: 100%;
+    height: 345px;
+    background-color: #ebeff1;
+    border: 3px solid #acbcc4;
+    border-radius: 1rem;
+    padding: 0.5rem;  
+}
+
+.encripta, 
+.descriptografa {
+    font-family: Helvetica, Arial, sans-serif;
+    color: #508aa6;
+
+    width: 15rem;
+    height: 50px;
+    padding: 0.5rem;
+    background-color: #ebeff1;
+    border-radius: 2rem;
+    border: 3px solid #acbcc4;
+    margin: 2.7rem 1rem 0 1rem;
+}
+
+.encripta:hover,
+.descriptografa:hover,
+#resultado button:hover {
+    color: #ebeff1;
+    font-weight: bolder;
+
+    background-color: #508aa6;
+    border: none;
+}
+
+#info {
+    display: block;
+}
+
+/********** Rightb Box CSS **********/
+
+#digitetexto {
+    width: 25rem;
+    height: 35rem;
+    align-self: center;
+    padding-top: 2em;
+    margin-bottom: 5rem;
+
+    background: #FFFFFF;
+    border-radius: 2rem;
+    filter: drop-shadow(0 8px 5px #bebebe);
+}
+
+#digitetexto img {   
+    max-width: 300px;
+    max-height: 300px;
+    margin-top: 10%;
+    height: auto;
+    width: auto;
+}
+
+.textRightBox {
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: center;
+    padding-bottom: 1.2rem;
+}
+
+h2.textRightBox  {
+    font-size: 22px;
+    font-weight: bold;
+}  
+
+p.textLeftBox,
+p.textRightBox {
+    font-family: Helvetica, Arial, sans-serif;
+    color: #acbcc4;
+}
+
+#resultado {
+    display: none;
+    width: 80%;
+    align-self: center;
+    padding-top: 2em;
+    margin-bottom: 5rem;
+    background: #FFFFFF;
+    border-radius: 2rem;
+    border: none;
+    filter: drop-shadow(0 8px 5px #bebebe);        
+}
+
+#resultado textarea {
+    font-family: Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 25rem;
+    font-size: 2rem;
+
+    height: 300px;
+    width: 300px;
+    margin-top: 10%;
+    margin-left: 10%;
+    border: none;
+}
+
+#resultado button {
+    font-family: Helvetica, Arial, sans-serif;
+
+    width: 15rem;
+    height: 50px;
+    border: 3px solid #acbcc4;
+    border-radius: 2rem;
+    margin:4rem 4rem 2rem 4rem;  
+}
+
+footer {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    
+    padding: 1rem 0 2rem 0;
+    background-color: #acbcc4;
+}
+
+/********** Responsividade **********/
+
+@media screen and (max-width: 1300px) {
+    main {
+        margin: 5rem 10% 5rem 10%;
+        display: block;
+        text-align: center;
+    }
+
+    .logo {
+      margin: 6rem auto 4rem auto;
+      display: flex;
+      justify-content: center;
+      width: 10%;
+    }
+      
+    .leftBox,
+    .rightBox {
+      display: block;
+      margin-top: 10%;
+    }
+      
+    .rightBox,
+    #textoEntrada, 
+    #digitetexto,
+    #resultado {
+      width: 100%;
+    }
+}
