@@ -1,6 +1,6 @@
-/********** Criptografa o texto **********/
+/********** Criptografar o texto **********/
 
-function criptografa(){
+function criptografarTexto(){
     
     var output = document.querySelector("#textosaida");
     
@@ -36,9 +36,9 @@ function criptografa(){
     output.value = novaMensagem;
 }
 
-/********** Descriptografa o texto **********/
+/********** Descriptografar o texto **********/
 
-function descriptografa(){
+function descriptografaTexto(){
     
     var output = document.querySelector("#textosaida");
     
@@ -57,7 +57,7 @@ function descriptografa(){
 }
 
 /********** Botão copiar **********/
-function copia(){
+function copiarTexto(){
 
     var output = document.querySelector("#textosaida");
     navigator.clipboard.writeText(output.value);
