@@ -1,6 +1,7 @@
-* { 
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -9,28 +10,15 @@ body {
     background-color: #ebeff1;
 }
 
+.logo {
+    margin: 4rem auto 4rem 10rem;
+}
+
 main {
     display: flex;
     margin: 2rem 10% 2rem 10%;
     justify-content: space-around;
 }
-
-.leftBox {
-    display: inline-block;
-}
-
-.rightBox {
-    display: inline-block;
-    width: 30rem;
-}
-
-.logo {
-    margin: 4rem auto 4rem 10rem;
-    display: block;
-    justify-content: left;
-}
-
-/********** Left Box CSS **********/
 
 #textoEntrada {
     font-family: Helvetica, Arial, sans-serif; 
@@ -43,10 +31,12 @@ main {
     border: 3px solid #acbcc4;
     border-radius: 1rem;
     padding: 0.5rem;  
+
 }
 
-.encripta, 
-.descriptografa {
+.btnencripta, 
+.btndescripta,
+#copiarTexto {
     font-family: Helvetica, Arial, sans-serif;
     color: #508aa6;
 
@@ -59,21 +49,15 @@ main {
     margin: 2.7rem 1rem 0 1rem;
 }
 
-.encripta:hover,
-.descriptografa:hover,
-#resultado button:hover {
+.btnencripta:hover,
+.btndescripta:hover,
+#copiarTexto:hover {
     color: #ebeff1;
     font-weight: bolder;
 
     background-color: #508aa6;
     border: none;
 }
-
-#info {
-    display: block;
-}
-
-/********** Right Box CSS **********/
 
 #digitetexto {
     width: 25rem;
@@ -87,21 +71,13 @@ main {
     filter: drop-shadow(0 8px 5px #bebebe);
 }
 
-#digitetexto img {   
-    max-width: 300px;
-    max-height: 300px;
-    margin-top: 10%;
-    height: auto;
-    width: auto;
-}
-
 .textRightBox {
     font-family: Helvetica, Arial, sans-serif;
     text-align: center;
     padding-bottom: 1.2rem;
 }
 
-h2.textRightBox  {
+h2.textRightBox {
     font-size: 22px;
     font-weight: bold;
 }  
@@ -112,39 +88,33 @@ p.textRightBox {
     color: #acbcc4;
 }
 
-#resultado {
+#resultadoTextoEntrada {
     display: none;
-    width: 80%;
+    width: 25rem;
     align-self: center;
     padding-top: 2em;
     margin-bottom: 5rem;
+
     background: #FFFFFF;
     border-radius: 2rem;
-    border: none;
     filter: drop-shadow(0 8px 5px #bebebe);        
 }
 
-#resultado textarea {
+#resultadoTextoEntrada textarea {
     font-family: Helvetica, Arial, sans-serif;
+    color: #508aa6;
     font-style: normal;
     font-weight: 25rem;
     font-size: 2rem;
 
-    height: 300px;
-    width: 300px;
-    margin-top: 10%;
-    margin-left: 10%;
+    height: 320px;
+    width: 320px;
+    margin: 10%;
     border: none;
 }
 
-#resultado button {
-    font-family: Helvetica, Arial, sans-serif;
-
-    width: 15rem;
-    height: 50px;
-    border: 3px solid #acbcc4;
-    border-radius: 2rem;
-    margin:4rem 4rem 2rem 4rem;  
+#resultadoTextoEntrada button {
+    margin: 4rem 70px 4rem 70px;
 }
 
 footer {
@@ -156,8 +126,6 @@ footer {
     padding: 1rem 0 2rem 0;
     background-color: #acbcc4;
 }
-
-/********** Responsividade **********/
 
 @media screen and (max-width: 1300px) {
     main {
@@ -182,7 +150,7 @@ footer {
     .rightBox,
     #textoEntrada, 
     #digitetexto,
-    #resultado {
+    #resultadoTextoEntrada {
       width: 100%;
     }
 }

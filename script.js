@@ -5,7 +5,7 @@ function criptografarTexto(){
     var output = document.querySelector("#textosaida");
     
     document.getElementById("digitetexto").style.display = "none";
-    document.getElementById("resultado").style.display = "inline-block";
+    document.getElementById("resultadoTextoEntrada").style.display = "inline-block";
     
     var input = document.querySelector("#textoEntrada");
     var mensagem = input.value;
@@ -38,12 +38,12 @@ function criptografarTexto(){
 
 /********** Descriptografar o texto **********/
 
-function descriptografaTexto(){
+function descriptografarTexto(){
     
     var output = document.querySelector("#textosaida");
     
     document.getElementById("digitetexto").style.display = "none";
-    document.getElementById("resultado").style.display = "inline-block";
+    document.getElementById("resultadoTextoEntrada").style.display = "inline-block";
 
     var input = document.querySelector("#textoEntrada");
     var mensagem = input.value;
