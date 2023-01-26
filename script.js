@@ -54,7 +54,7 @@ function descriptografarTexto() {
     output.value = mensagem;
 }
 
-//Função para copiar o texte
+//Função para copiar o texto
 function copiarTexto() {
 
     var output = document.querySelector("#textosaida");
