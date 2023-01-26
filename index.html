@@ -1,44 +1,48 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta chaset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Decodificador de texto</title> 
-        <link rel="stylesheet" href="style.css">
-        <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">     
-        <script type="text/javascript" src="script.js"></script>
-    </head>
-    <body>
-        <header>
-            <a href="index.html"><img class="logo" src="./assets/logo.png"></a>        
-        </header>
-        <main>
-            <div class="leftBox"> 
-                <textarea id="textoEntrada" placeholder="Digite seu texto."></textarea>
-                <div id="info">
-                    <p class="textLeftBox"><img class="imgAlert" src="./assets/icoAlert.png">&nbsp;Apenas letras minúculas e sem acento.</p>
-                </div>           
-                <div id="button">
-                    <button class="btnencripta" onclick="criptografarTexto()">Criptografar</button>
-                    <button class="btndescripta" onclick="descriptografarTexto()">Descriptografar</button>
-                </div>
+
+<head>
+    <meta chaset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de texto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img class="logo" src="./assets/logo.png" alt="logo da alura"></a>
+    </header>
+    <main>
+        <div class="leftBox">
+            <textarea id="textoEntrada" placeholder="Digite seu texto."></textarea>
+            <div id="info">
+                <p class="textLeftBox"><img class="imgAlert" src="./assets/icoAlert.png">&nbsp;Apenas letras minúculas e
+                    sem acento.</p>
             </div>
-            <div class="rightBox">
-                <div id="saida">
-                    <div id="digitetexto">
-                    <img src="./assets/imgVetor.png">
+            <div id="button">
+                <button class="btnencripta" onclick="criptografarTexto()">Criptografar</button>
+                <button class="btndescripta" onclick="descriptografarTexto()">Descriptografar</button>
+            </div>
+        </div>
+        <div class="rightBox">
+            <div id="saida">
+                <div id="digitetexto">
+                    <img src="./assets/imgVetor.png" alt="representação de uma pessoa com uma lupa">
                     <h2 class="textRightBox">Nenhuma mensagem encontrada</h2>
                     <p class="textRightBox">Digite um texto que você deseja criptografar ou descriptografar.</p>
                 </div>
                 <div id="resultadoTextoEntrada">
-                    <textarea id="textosaida"></textarea>   
+                    <textarea id="textosaida"></textarea>
                     <button id="copiarTexto" onclick="copiarTexto()">Copiar</button>
-                </div>    
+                </div>
             </div>
-        </main> 
-        <footer>
-            <p>© Desenvolvido por Rogério Bueno 2022</p>
-        </footer>    
-    </body>
+    </main>
+    <footer>
+        <p>© Desenvolvido por Rogério Bueno 2022 | Challenge ONE - Oracle Next Education & Alura</p>
+    </footer>
+</body>
+
 </html>

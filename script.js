@@ -1,47 +1,45 @@
-/********** Criptografar o texto **********/
+//Função para criptografar
+function criptografarTexto() {
 
-function criptografarTexto(){
-    
     var output = document.querySelector("#textosaida");
-    
+
     document.getElementById("digitetexto").style.display = "none";
     document.getElementById("resultadoTextoEntrada").style.display = "inline-block";
-    
+
     var input = document.querySelector("#textoEntrada");
     var mensagem = input.value;
     var novaMensagem = "";
- 
+
     var listaCaractere = mensagem.split("");
-    
-    for(var i=0; i<listaCaractere.length; i++){
-        
-        if(listaCaractere[i] == "a"){
+
+    for (var i = 0; i < listaCaractere.length; i++) {
+
+        if (listaCaractere[i] == "a") {
             listaCaractere[i] = "ai";
         }
-        else if(listaCaractere[i] == "e"){
+        else if (listaCaractere[i] == "e") {
             listaCaractere[i] = "enter";
         }
-        else if(listaCaractere[i] == "i"){
+        else if (listaCaractere[i] == "i") {
             listaCaractere[i] = "imes";
         }
-        else if(listaCaractere[i] == "o"){
+        else if (listaCaractere[i] == "o") {
             listaCaractere[i] = "ober";
         }
-        else if(listaCaractere[i] == "u"){
+        else if (listaCaractere[i] == "u") {
             listaCaractere[i] = "ufat";
         }
         novaMensagem = novaMensagem + listaCaractere[i];
     }
-   
+
     output.value = novaMensagem;
 }
 
-/********** Descriptografar o texto **********/
+//Função para descriptografar
+function descriptografarTexto() {
 
-function descriptografarTexto(){
-    
     var output = document.querySelector("#textosaida");
-    
+
     document.getElementById("digitetexto").style.display = "none";
     document.getElementById("resultadoTextoEntrada").style.display = "inline-block";
 
@@ -56,8 +54,8 @@ function descriptografarTexto(){
     output.value = mensagem;
 }
 
-/********** Botão copiar **********/
-function copiarTexto(){
+//Função para copiar o texte
+function copiarTexto() {
 
     var output = document.querySelector("#textosaida");
     navigator.clipboard.writeText(output.value);
